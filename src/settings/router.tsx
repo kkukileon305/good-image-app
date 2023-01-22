@@ -16,6 +16,10 @@ const router = createBrowserRouter([
         path: 'photo/:photoId',
         element: <PhotoDetail />,
       },
+      {
+        path: 'random',
+        element: <div>random</div>,
+      },
     ],
     errorElement: <div>error</div>,
   },

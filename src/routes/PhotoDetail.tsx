@@ -7,9 +7,9 @@ const PhotoDetail = () => {
   const { data: photo, isLoading, isError } = usePhoto(photoId || '6kajEqr84iY');
 
   return (
-    <div className='flex gap-4'>
-      <img src={photo?.urls.small} alt={photo?.alt_description || 'No desc'} />
-      <div className='flex flex-col w-[calc(100%-400px)] justify-between border p-4 rounded-xl'>
+    <div className='flex flex-col items-center md:items-stretch md:flex-row gap-4'>
+      <img className='w-[400px]' src={photo?.urls.small} alt={photo?.alt_description || 'No desc'} />
+      <div className='flex flex-col w-full md:w-[calc(100%-400px)] justify-between border p-4 rounded-xl'>
         <div className='flex flex-col gap-4'>
           <p className='font-bold text-xl'>{photo?.alt_description || 'No desc'}</p>
           <p>Color: {photo?.color}</p>

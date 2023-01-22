@@ -10,11 +10,13 @@ const Header = () => (
         </h1>
       </div>
       <div className='flex items-center w-[calc(100%-200px)] justify-between gap-4 p-4'>
-        <div className='bg-gray-300 px-4 py-2 rounded-full flex items-center'>
+        <div className='hidden md:flex bg-gray-300 px-4 py-2 rounded-full items-center'>
           <input type='text' className='bg-transparent' placeholder='Search...' />
           <BsSearch />
         </div>
-        <p>Good</p>
+        <div className='flex items-center gap-4'>
+          <Link to={'/random'}>Random Photo</Link>
+        </div>
       </div>
     </div>
   </header>
