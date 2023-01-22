@@ -1,14 +1,14 @@
 export interface Photo {
   id: string;
-  created_at: Date;
-  updated_at: Date;
-  promoted_at: null;
+  created_at: string;
+  updated_at: string;
+  promoted_at: string | null;
   width: number;
   height: number;
   color: string;
   blur_hash: string;
-  description: string;
-  alt_description: string;
+  description: string | null;
+  alt_description: string | null;
   urls: Urls;
   links: PhotoLinks;
   likes: number;

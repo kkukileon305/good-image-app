@@ -1,3 +1,4 @@
+import PhotoThumb from '../components/items/PhotoThumb';
 import usePhotos from '../hooks/usePhotos';
 
 const MainPage = () => {
@@ -6,9 +7,7 @@ const MainPage = () => {
   return (
     <ul>
       {photos?.map(photo => (
-        <li key={photo.id}>
-          <img src={photo.urls.regular} alt={photo.alt_description} />
-        </li>
+        <PhotoThumb key={photo.id} photo={photo} />
       ))}
     </ul>
   );
