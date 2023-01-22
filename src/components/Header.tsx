@@ -2,7 +2,7 @@ import { BsSearch } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header className='border-b sticky top-0 bg-white/70 backdrop-blur-sm'>
+  <header className='border-b sticky top-0 bg-white/70 backdrop-blur-sm z-10'>
     <div className='flex items-center max-w-[1440px] w-full mx-auto'>
       <div className='flex gap-4 items-center w-[200px] p-4'>
         <h1 className='text-2xl font-bold'>
