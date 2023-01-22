@@ -7,8 +7,8 @@ export interface Photo {
   height: number;
   color: string;
   blur_hash: string;
-  description: null;
-  alt_description: null;
+  description: string;
+  alt_description: string;
   urls: Urls;
   links: PhotoLinks;
   likes: number;
