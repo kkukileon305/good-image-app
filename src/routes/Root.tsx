@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Header from '../components/Header';
 
 const Root = () => {
@@ -12,6 +12,7 @@ const Root = () => {
         </main>
       </div>
       <footer className='border-t'>footer</footer>
+      <ScrollRestoration />
     </>
   );
 };
