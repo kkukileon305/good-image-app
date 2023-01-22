@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainPage from '../routes/Main';
 import PhotoDetail from '../routes/PhotoDetail';
+import Random from '../routes/Random';
 import Root from '../routes/Root';
 
 const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'random',
-        element: <div>random</div>,
+        element: <Random />,
       },
     ],
     errorElement: <div>error</div>,
