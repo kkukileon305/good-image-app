@@ -19,7 +19,7 @@ const PhotoDetail = () => {
           <p>{photo?.description || 'No alt_desc'}</p>
         </div>
         <div className='flex gap-4 justify-end items-center'>
-          <p className='border rounded-full aspect-square w-8 border-pink-300 flex justify-center items-center text-pink-300'>{photo?.likes}</p>
+          <p className='border rounded-full aspect-square w-8 border-pink-300 flex justify-center items-center text-pink-300 select-none cursor-pointer'>{photo?.likes}</p>
           <a target='_blank' href={photo?.links.download} className='px-4 py-1 border rounded-full'>
             Down
           </a>
