@@ -9,7 +9,7 @@ type PhotoThumbProps = {
 const PhotoThumb = ({ photo }: PhotoThumbProps) => {
   return (
     <li className='mb-4'>
-      <Link to={`photo/${photo.id}`} className='w-full flex flex-col gap-4 sm:flex-row justify-between items-center sm:items-stretch p-4 shadow-md border rounded-xl overflow-hidden'>
+      <Link to={`/photo/${photo.id}`} className='w-full flex flex-col gap-4 sm:flex-row justify-between items-center sm:items-stretch p-4 shadow-md border rounded-xl overflow-hidden'>
         <img className='w-[200px]' src={photo.urls.thumb} alt={photo.alt_description || 'There is no description...'} />
         <div className='w-full sm:w-[calc(100%-216px)] flex flex-col justify-between'>
           <p>{photo.alt_description || 'There is no description...'}</p>

@@ -88,3 +88,11 @@ export interface Urls {
   thumb: string;
   small_s3: string;
 }
+
+//
+
+export interface SearchResponse {
+  total: number;
+  total_pages: number;
+  results: Photo[];
+}

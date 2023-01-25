@@ -5,6 +5,9 @@ const queryClient = new QueryClient({
     queries: {
       staleTime: 1000 * 60 * 1,
     },
+    mutations: {
+      onError: console.log,
+    },
   },
 });
 
